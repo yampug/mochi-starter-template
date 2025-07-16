@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Mochi Starter</title>
+        <script
+          src="./build/opal-runtime.js"
+          onload='Opal.require("native"); Opal.require("promise"); Opal.require("browser/setup/full");'></script>
+        <script src="./build/bundle.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+        <style>
+            body { 
+                background: #24262c;
+            }
+            .logo-block {
+                display: flex;
+                justify-content: center;
+                gap: 22px;
+                align-items: anchor-center;
+                color: white;
+                width: 100%;
+                font-family: "Caprasimo", serif;
+                font-weight: 400;
+                font-style: normal;                    
+            }
+            .logo { height: 64px; }
+        </style>
+    </head>
+    <body>
+        <div class="logo-block">
+            <img class="logo" src="https://github.com/yampug/mochi/blob/main/devground/mochi.png?raw=true"/>
+            <h1>Hello Mochi</h1>
+        </div>
+        <div>
+            <my-counter count="3"></my-counter>
+        </div>
+    </body>
+</html>
